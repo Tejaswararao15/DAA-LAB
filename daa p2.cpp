@@ -1,20 +1,20 @@
 #include <iostream>
-using namespace std;
+#include <chrono>
 
-int linearSearch(int a[], int n, int key)
+using namespace std;
+using namespace std::chrono;
+
+int linearSearch(int arr[], int n, int key)
 {
     for(int i = 0; i < n; i++)
     {
-        if(a[i] == key)
-        {
+        if(arr[i] == key)
             return i;
-        }
     }
-
     return -1;
 }
 
-int binarySearch(int a[], int n, int key)
+int binarySearch(int arr[], int n, int key)
 {
     int low = 0;
     int high = n - 1;
@@ -23,18 +23,12 @@ int binarySearch(int a[], int n, int key)
     {
         int mid = (low + high) / 2;
 
-        if(a[mid] == key)
-        {
+        if(arr[mid] == key)
             return mid;
-        }
-        else if(a[mid] < key)
-        {
+        else if(arr[mid] < key)
             low = mid + 1;
-        }
         else
-        {
             high = mid - 1;
-        }
     }
 
     return -1;
@@ -42,35 +36,36 @@ int binarySearch(int a[], int n, int key)
 
 int main()
 {
-    int a[10] = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
-    int n = 10;
-    int key;
-
-    cout << "Array: ";
+    const int n = 100;
+    int arr[n];
 
     for(int i = 0; i < n; i++)
     {
-        cout << a[i] << " ";
+        arr[i] = i + 1;
     }
 
-    cout << "\nEnter element to search: ";
-    cin >> key;
+    int key = 100;
 
-    int result;
+    auto start = high_resolution_clock::now();
+    int index = linearSearch(arr, n, key);
+    auto stop = high_resolution_clock::now();
 
-    result = linearSearch(a, n, key);
+    cout << "Linear Search" << endl;
+    cout << "Element found at index " << index << endl;
+    cout << "Time Taken : "
+         << duration_cast<microseconds>(stop - start).count()
+         << " microseconds" << endl;
 
-    if(result != -1)
-        cout << "Linear Search: Element found at index " << result << endl;
-    else
-        cout << "Linear Search: Element not found" << endl;
+    start = high_resolution_clock::now();
+    index = binarySearch(arr, n, key);
+    stop = high_resolution_clock::now();
 
-    result = binarySearch(a, n, key);
-
-    if(result != -1)
-        cout << "Binary Search: Element found at index " << result << endl;
-    else
-        cout << "Binary Search: Element not found" << endl;
+    cout << endl;
+    cout << "Binary Search" << endl;
+    cout << "Element found at index " << index << endl;
+    cout << "Time Taken : "
+         << duration_cast<microseconds>(stop - start).count()
+         << " microseconds" << endl;
 
     return 0;
 }
