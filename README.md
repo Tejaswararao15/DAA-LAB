@@ -41,3 +41,79 @@ Linear Search is simple and works on both sorted and unsorted arrays.
 Binary Search is faster but works only on sorted arrays.
 The time analysis shows that Binary Search takes less time than Linear Search.
 Therefore, Binary Search is better for large sorted data, while Linear Search is suitable for small or unsorted data.
+
+practical 3:
+summary :
+1. Max Heap Sort
+Explanation
+
+A Max Heap is a binary heap where the largest element is always at the root.
+
+Steps:
+
+Convert the array into a Max Heap.
+The largest element comes to the first position.
+Swap the first element with the last element.
+Remove the last element from the heap.
+Heapify the remaining elements.
+Repeat until the array is sorted.
+
+Example:
+
+Array:       40  10  30  20  50
+
+Max Heap:    50  20  30  10  40
+
+After sorting:
+             10  20  30  40  50
+Time Complexity
+Building Max Heap: O(n)
+Heapify: O(log n)
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n log n)
+Space Complexity
+
+O(log n) with recursive heapify.
+
+2. Min Heap Sort
+Explanation
+
+A Min Heap is a binary heap where the smallest element is always at the root.
+
+Steps:
+
+Convert the array into a Min Heap.
+The smallest element comes to the root.
+Swap the root with the last element.
+Remove the last element from the heap.
+Heapify the remaining elements.
+Repeat until all elements are sorted.
+
+Example:
+
+Array:       40  10  30  20  50
+
+Min Heap:    10  20  30  40  50
+
+A Min Heap naturally gives the smallest element first. Depending on how the extraction is implemented, it can produce descending order; reversing the result gives ascending order.
+
+Time Complexity
+Building Min Heap: O(n)
+Heapify: O(log n)
+Best Case: O(n log n)
+Average Case: O(n log n)
+Worst Case: O(n log n)
+Space Complexity
+
+O(log n) with recursive heapify.
+
+Simple difference
+
+Max Heap: Largest element → root → commonly used to get ascending order with standard heap sort.
+
+Min Heap: Smallest element → root → commonly used to get descending order with standard extraction, or ascending order after reversing.
+
+Conclusion
+
+Both Max Heap and Min Heap are important heap structures in DAA. Heap Sort has O(n log n) time complexity in the best, average, and worst cases. Max Heap is commonly used for ascending Heap Sort, while Min Heap can be used for descending Heap Sort.
