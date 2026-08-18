@@ -42,8 +42,9 @@ Binary Search is faster but works only on sorted arrays.
 The time analysis shows that Binary Search takes less time than Linear Search.
 Therefore, Binary Search is better for large sorted data, while Linear Search is suitable for small or unsorted data.
 
-practical 3:
-summary :
+PRACTICAL 3:
+
+Summary :
 1. Max Heap Sort
 Explanation
 
@@ -117,3 +118,23 @@ Min Heap: Smallest element → root → commonly used to get descending order wi
 Conclusion
 
 Both Max Heap and Min Heap are important heap structures in DAA. Heap Sort has O(n log n) time complexity in the best, average, and worst cases. Max Heap is commonly used for ascending Heap Sort, while Min Heap can be used for descending Heap Sort.
+
+
+PRACTICAL 4:
+
+Summary :
+
+This practical was used to implement and analyze a factorial program using iterative and recursive methods. Both methods calculate the factorial of a given number, but their working methods and memory usage are different.
+
+Iterative Method calculates the factorial by using a loop and repeatedly multiplying the numbers from 1 to n.
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Recursive Method calculates the factorial by calling the same function repeatedly with a smaller value until it reaches the base condition.
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+Conclusion :
+
+From this practical, we learned that both iterative and recursive methods can be used to calculate the factorial of a number. Both methods have O(n) time complexity, but their space requirements are different. The iterative method uses less memory and is more memory efficient, while the recursive method is useful for understanding the concept of recursion. We also learned how to calculate and compare the execution time of both methods.
+
