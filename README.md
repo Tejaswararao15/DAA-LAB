@@ -138,3 +138,15 @@ Conclusion :
 
 From this practical, we learned that both iterative and recursive methods can be used to calculate the factorial of a number. Both methods have O(n) time complexity, but their space requirements are different. The iterative method uses less memory and is more memory efficient, while the recursive method is useful for understanding the concept of recursion. We also learned how to calculate and compare the execution time of both methods.
 
+PRACTICAL 7:
+Summary :
+
+The Making Change Problem was implemented using the Dynamic Programming technique. The main objective of the program is to find the minimum number of coins required to make a given amount. The program uses a dp array to store the minimum coins needed for each amount from 0 to the given amount. By using previously calculated values, repeated calculations are avoided and the solution becomes more efficient.
+
+Time Complexity: O(n × amount)
+Space Complexity: O(amount)
+
+Conclusion :
+
+The Dynamic Programming approach provides an efficient solution to the Making Change Problem. It follows the concept of optimal substructure and overlapping subproblems. By storing the solutions of smaller amounts, the program can quickly calculate the solution for the required amount. This method is more efficient than checking all possible combinations. Therefore, Dynamic Programming is a useful technique for solving optimization problems such as the minimum coin change problem.
+
