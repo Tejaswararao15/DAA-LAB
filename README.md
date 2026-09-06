@@ -159,6 +159,7 @@ Conclusion :
 The Chain Matrix Multiplication problem was successfully implemented using Dynamic Programming. The algorithm finds the minimum number of multiplications required to multiply a chain of matrices efficiently. The time complexity of the algorithm is O(n³) and the space complexity is O(n²). Thus, Dynamic Programming provides an efficient method for solving the matrix chain multiplication problem.
 
 PRACTICAL 7:
+
 Summary :
 
 The Making Change Problem was implemented using the Dynamic Programming technique. The main objective of the program is to find the minimum number of coins required to make a given amount. The program uses a dp array to store the minimum coins needed for each amount from 0 to the given amount. By using previously calculated values, repeated calculations are avoided and the solution becomes more efficient.
