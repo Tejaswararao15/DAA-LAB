@@ -139,6 +139,7 @@ Conclusion :
 From this practical, we learned that both iterative and recursive methods can be used to calculate the factorial of a number. Both methods have O(n) time complexity, but their space requirements are different. The iterative method uses less memory and is more memory efficient, while the recursive method is useful for understanding the concept of recursion. We also learned how to calculate and compare the execution time of both methods.
 
 PRACTICAl 5:
+
 Summary :
 
 In this practical, we implemented the 0/1 Knapsack problem using Dynamic Programming. The problem is used to select items with given weights and values so that the total weight does not exceed the given capacity while obtaining the maximum possible value. Dynamic Programming solves the problem by dividing it into smaller subproblems and storing their results in a DP table. This avoids repeated calculations and makes the solution more efficient.
@@ -148,6 +149,7 @@ Conclusion :
 The 0/1 Knapsack problem was successfully implemented using Dynamic Programming. The algorithm finds the maximum value that can be obtained within the given capacity. The time complexity of the algorithm is O(nW) and the space complexity is O(nW), where n is the number of items and W is the knapsack capacity. Thus, Dynamic Programming provides an efficient approach for solving the Knapsack problem.
 
 PRACTICAL 6:
+
 Summary :
 
 In this practical, we implemented Chain Matrix Multiplication using Dynamic Programming. The main objective is to find the best order of multiplying a sequence of matrices so that the total number of scalar multiplications is minimized. Dynamic Programming divides the problem into smaller subproblems and stores their results in a table to avoid repeated calculations.
