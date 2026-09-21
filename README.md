@@ -171,3 +171,10 @@ Conclusion :
 
 The Dynamic Programming approach provides an efficient solution to the Making Change Problem. It follows the concept of optimal substructure and overlapping subproblems. By storing the solutions of smaller amounts, the program can quickly calculate the solution for the required amount. This method is more efficient than checking all possible combinations. Therefore, Dynamic Programming is a useful technique for solving optimization problems such as the minimum coin change problem.
 
+PRACTICAL 8:
+
+Summary :
+In this practical, a graph was implemented using an adjacency list in C++. Two important graph traversal techniques, DFS (Depth First Search) and BFS (Breadth First Search), were implemented. DFS explores a vertex as deeply as possible before backtracking, while BFS explores vertices level by level using a queue.
+
+Conclusion
+The practical demonstrates how graphs can be represented and traversed efficiently using DFS and BFS. DFS is useful for exploring paths and connected components, while BFS is useful for level-order traversal and finding the shortest path in an unweighted graph. Both algorithms have a time complexity of O(V + E) when an adjacency-list representation is used.
