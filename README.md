@@ -178,3 +178,13 @@ In this practical, a graph was implemented using an adjacency list in C++. Two i
 
 Conclusion
 The practical demonstrates how graphs can be represented and traversed efficiently using DFS and BFS. DFS is useful for exploring paths and connected components, while BFS is useful for level-order traversal and finding the shortest path in an unweighted graph. Both algorithms have a time complexity of O(V + E) when an adjacency-list representation is used.
+
+PRACTICAL 9:
+
+Summary :
+
+Prim’s Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected weighted graph. It starts from one vertex and repeatedly selects the minimum-weight edge that connects a vertex in the MST to a vertex outside the MST. This process continues until all vertices are included.
+
+Conclusion
+
+Thus, Prim’s Algorithm was successfully implemented in C++. The algorithm finds a Minimum Spanning Tree with the minimum possible total edge weight. For the given graph, the minimum total weight is 16.
