@@ -185,6 +185,21 @@ Summary :
 
 Prim’s Algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a connected weighted graph. It starts from one vertex and repeatedly selects the minimum-weight edge that connects a vertex in the MST to a vertex outside the MST. This process continues until all vertices are included.
 
+PRACTICAL 10:
+
+Summary :
+Kruskal’s algorithm is a greedy algorithm used to find the Minimum Spanning Tree (MST) of a weighted, undirected graph. It sorts the edges in ascending order of their weights and selects the smallest edges without forming a cycle until 
+V
+−
+1
+V−1 edges are selected.
+
+Conclusion
+Thus, Kruskal’s algorithm was successfully implemented in C++. It finds the Minimum Spanning Tree with the minimum total edge weight. This practical helped us understand the greedy approach and how to avoid cycles while selecting edges in a graph.
+
+
+
+
 Conclusion
 
 Thus, Prim’s Algorithm was successfully implemented in C++. The algorithm finds a Minimum Spanning Tree with the minimum possible total edge weight. For the given graph, the minimum total weight is 16.
