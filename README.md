@@ -204,3 +204,11 @@ The Floyd-Warshall algorithm is an important graph algorithm used to find the sh
 
 Conclusion
 Thus, the Floyd-Warshall algorithm was successfully implemented using C++. The program calculates the shortest distances between all pairs of vertices by repeatedly comparing the existing distance with the distance through an intermediate vertex. The final distance matrix provides the minimum distance between each pair of vertices. This practical helped in understanding the dynamic programming approach and its application to graph problems.
+
+PRACTICAL 12 :
+
+Summary :
+The Travelling Salesman Problem (TSP) is a well-known optimization problem in which a salesman must visit every city exactly once and return to the starting city with minimum total travelling cost. This program uses the backtracking technique to explore possible routes and find the minimum cost. The cost matrix represents the travelling cost between cities, and a visited array keeps track of the cities already visited.
+
+Conclusion
+Thus, the Travelling Salesman Problem was successfully implemented in C++. The program explores possible tours, calculates their total costs, and identifies the minimum travelling cost. This practical helps in understanding backtracking and optimization techniques. The approach is useful in route planning, transportation, and logistics. Its worst-case time complexity is approximately \(O(n!)\), making it suitable mainly for a small number of cities.
