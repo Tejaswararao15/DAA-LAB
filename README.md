@@ -197,9 +197,10 @@ V−1 edges are selected.
 Conclusion
 Thus, Kruskal’s algorithm was successfully implemented in C++. It finds the Minimum Spanning Tree with the minimum total edge weight. This practical helped us understand the greedy approach and how to avoid cycles while selecting edges in a graph.
 
+PRACTICAL 11 :
 
-
+Summary :
+The Floyd-Warshall algorithm is an important graph algorithm used to find the shortest distances between every pair of vertices in a weighted graph. It is based on the concept of dynamic programming. The algorithm checks all possible intermediate vertices and updates the distance matrix whenever a shorter path is found. It can handle positive and negative edge weights, but it does not work correctly when the graph contains a negative-weight cycle. The algorithm is simple to implement and is useful in network routing, transportation systems, and pathfinding applications. Its time complexity is \(O(n^3)\), and its space complexity is \(O(n^2)\).
 
 Conclusion
-
-Thus, Prim’s Algorithm was successfully implemented in C++. The algorithm finds a Minimum Spanning Tree with the minimum possible total edge weight. For the given graph, the minimum total weight is 16.
+Thus, the Floyd-Warshall algorithm was successfully implemented using C++. The program calculates the shortest distances between all pairs of vertices by repeatedly comparing the existing distance with the distance through an intermediate vertex. The final distance matrix provides the minimum distance between each pair of vertices. This practical helped in understanding the dynamic programming approach and its application to graph problems.
